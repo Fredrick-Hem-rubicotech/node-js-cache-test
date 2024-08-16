@@ -17,9 +17,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Delay for 10 minutes
-      run: sleep 60
-      
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
