@@ -26,6 +26,9 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
+    - name: Delay for 10 minutes
+      run: sleep 600
+      
     - name: Run Linting
       run: npm run lint      
 
