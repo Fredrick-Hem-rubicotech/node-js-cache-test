@@ -38,6 +38,6 @@ jobs:
       id: upload_apk
       uses: svenstaro/upload-release-action@v2
       with:
-        file: ".next/"
+        file: ".next/app-build-manifest.json"
         tag: v1.0
 
