@@ -38,6 +38,6 @@ jobs:
       id: upload_apk
       uses: svenstaro/upload-release-action@v2
       with:
-        file: "dist/"
+        file: ".next/"
         tag: v1.0
 
