@@ -34,10 +34,11 @@ jobs:
     - name: Build app dev
       run: npm run build
 
-    - name: Create Release
-      id: upload_apk
+    - name: Push APK to Releases
       uses: svenstaro/upload-release-action@v2
       with:
-        file: ".next/app-build-manifest.json"
-        tag: v1.0
+        file: './package.json'
+        asset_name: package.json
+        tag: v1.0+22
+        release_name: v1.0+22
 
